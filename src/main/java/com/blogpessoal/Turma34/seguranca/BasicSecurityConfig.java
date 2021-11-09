@@ -41,7 +41,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.userDetailsService(service);
 		
 		auth.inMemoryAuthentication()
-			.withUser("boaz").password(senhaEncoder().encode("boaz")).authorities("ROLE_ADMIN");
+			.withUser("admin").password(senhaEncoder().encode("admin")).authorities("ROLE_ADMIN");
  	}
 
 }
