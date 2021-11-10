@@ -25,14 +25,25 @@ import com.blogpessoal.Turma34.modelos.dtos.UsuarioLoginDTO;
 import com.blogpessoal.Turma34.repositorios.UsuarioRepositorio;
 import com.blogpessoal.Turma34.servicos.UsuarioServicos;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
 @RestController
 @RequestMapping("/api/v1/usuario")
+@Api(tags = "Controlador de Usuario", description = "Utilitario de Usuarios")
 @CrossOrigin(allowedHeaders = "*", origins = "*")
 public class UsuarioControlador {
 
 	private @Autowired UsuarioRepositorio repositorio;
 	private @Autowired UsuarioServicos servicos;
 
+	@ApiOperation(value = "Busca lista de usuarios no sistema")
+	@ApiResponses(value = {
+			@ApiResponse(code =200, message = "Retorna com Usuario"),
+			@ApiResponse(code =204, message = "Retorno sem Usuario")
+	})
 	@GetMapping("/todes")
 	public ResponseEntity<List<Usuario>> pegarTodes() {
 		List<Usuario> objetoLista = repositorio.findAll();

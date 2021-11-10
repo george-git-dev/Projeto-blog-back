@@ -15,6 +15,8 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * Classe espelho da tabela usuario no banco db_blogpessoal.
  * 
@@ -27,7 +29,7 @@ public class Usuario {
 
 	private @Id @GeneratedValue(strategy = GenerationType.IDENTITY) Long idUsuario;
 	private @NotBlank String nome;
-	private @Email String email;
+	private @ApiModelProperty(example = "email@dominio.com") @Email String email;
 	private @NotBlank @Size(min = 5, max = 100) String senha;
 
 	@OneToMany(mappedBy = "criador", cascade = CascadeType.REMOVE)

@@ -22,11 +22,8 @@ public class SwaggerConfiguracao {
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
 				.apis(RequestHandlerSelectors.basePackage("com.blogpessoal.Turma34.controladores"))
-				.paths(PathSelectors.any()).build().apiInfo(metadata()).useDefaultResponseMessages(false)
-				.globalResponses(HttpMethod.GET, responseMessage())
-				.globalResponses(HttpMethod.POST, responseMessage())
-				.globalResponses(HttpMethod.PUT, responseMessage())
-				.globalResponses(HttpMethod.DELETE, responseMessage());
+				.paths(PathSelectors.any()).build().apiInfo(metadata()).useDefaultResponseMessages(false);
+
 	}
 
 	public static ApiInfo metadata() {
