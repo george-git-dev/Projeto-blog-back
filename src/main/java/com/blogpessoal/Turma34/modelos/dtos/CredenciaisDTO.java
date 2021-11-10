@@ -3,7 +3,7 @@ package com.blogpessoal.Turma34.modelos.dtos;
 /**
  * Classe Espelho para retornar credênciais para o sistema
  * 
- * @author Turma34
+ * @author George
  * @since 1.0
  *
  */

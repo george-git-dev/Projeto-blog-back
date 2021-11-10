@@ -16,7 +16,7 @@ public interface UsuarioRepositorio extends JpaRepository<Usuario, Long> {
 	 * 
 	 * @param email
 	 * @return Optional com Usuário
-	 * @author Turma34
+	 * @author George
 	 * @since 1.0
 	 * 
 	 */
@@ -27,7 +27,7 @@ public interface UsuarioRepositorio extends JpaRepository<Usuario, Long> {
 	 * 
 	 * @param nome
 	 * @return List com Usuário
-	 * @author Turma34
+	 * @author George
 	 * @since 1.0
 	 * 
 	 */

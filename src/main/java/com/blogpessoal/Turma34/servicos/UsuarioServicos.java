@@ -27,7 +27,7 @@ public class UsuarioServicos {
 	 * @param senha
 	 * @return String da senha criptografada
  	 * @since 1.0
-	 * @author Turma34
+	 * @author George
 	 * 
 	 */
 	private static String encriptadorDeSenha(String senha) {
@@ -42,7 +42,7 @@ public class UsuarioServicos {
 	 * 
 	 * @param usuarioParaCadastrar do tipo Usuario
 	 * @return Optional com Usuario cadastrado caso email não seja existente
-	 * @author Turma34
+	 * @author George
 	 * @since 2.0
 	 * 
 	 */
@@ -61,7 +61,7 @@ public class UsuarioServicos {
 	 * 
 	 * @param usuarioParaAtualizar do tipo Usuario
 	 * @return Optional com Usuario atualizado
-	 * @author Turma34
+	 * @author George
 	 * @since 1.5
 	 * 
 	 */
@@ -87,7 +87,7 @@ public class UsuarioServicos {
 	 * @param senha
 	 * @return Token no formato Basic para autenticação
 	 * @since 1.0
-	 * @author Turma34
+	 * @author George
 	 * 
 	 */
 	private static String gerarToken(String email, String senha) {
@@ -107,7 +107,7 @@ public class UsuarioServicos {
 	 * @return ResponseEntity com CredenciaisDTO preenchido com informações mais o
 	 *         Token
 	 * @since 1.0
-	 * @author Turma34
+	 * @author George
 	 * 
 	 */
 	public ResponseEntity<CredenciaisDTO> pegarCredenciais(UsuarioLoginDTO usuarioParaAutenticar) {

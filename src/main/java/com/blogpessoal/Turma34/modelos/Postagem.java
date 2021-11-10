@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 /**
  * Classe espelho da tabela postagem no banco db_blogpessoal.
  * 
- * @author Turma34
+ * @author George
  * @since 1.0
  *
  */

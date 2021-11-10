@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 /**
  * Classe Espelho para logar no sistema
  * 
- * @author Turma34
+ * @author George
  * @since 1.0
  *
  */

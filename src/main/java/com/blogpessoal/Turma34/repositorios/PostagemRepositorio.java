@@ -15,7 +15,7 @@ public interface PostagemRepositorio extends JpaRepository<Postagem, Long> {
 	 * 
 	 * @param titulo
 	 * @return List com Postagem
-	 * @author Turma34
+	 * @author George
 	 * @since 1.0
 	 * 
 	 */
@@ -27,7 +27,7 @@ public interface PostagemRepositorio extends JpaRepository<Postagem, Long> {
 	 * 
 	 * @param descricao
 	 * @return List com Postagem
-	 * @author Turma34
+	 * @author George
 	 * @since 1.0
 	 * 
 	 */

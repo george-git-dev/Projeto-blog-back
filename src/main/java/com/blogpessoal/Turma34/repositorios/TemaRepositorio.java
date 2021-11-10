@@ -15,7 +15,7 @@ public interface TemaRepositorio extends JpaRepository<Tema, Long> {
 	 * 
 	 * @param tema
 	 * @return List com Tema
-	 * @author Turma34
+	 * @author George
 	 * @since 1.0
 	 * 
 	 */
