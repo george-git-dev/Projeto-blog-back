@@ -8,12 +8,14 @@ package com.blogpessoal.Turma34.modelos.dtos;
  *
  */
 public class CredenciaisDTO {
-	
+
 	private Long idUsuario;
 	private String nome;
 	private String email;
 	private String senha;
 	private String token;
+	private String foto;
+	private String tipo;
 
 	public String getEmail() {
 		return email;
@@ -54,5 +56,21 @@ public class CredenciaisDTO {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
 }

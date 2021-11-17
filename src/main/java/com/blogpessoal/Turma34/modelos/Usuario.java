@@ -31,9 +31,27 @@ public class Usuario {
 	private @NotBlank String nome;
 	private @ApiModelProperty(example = "email@dominio.com") @Email String email;
 	private @NotBlank @Size(min = 5, max = 100) String senha;
+	private String foto;
+	private String tipo;
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
 
 	@OneToMany(mappedBy = "criador", cascade = CascadeType.REMOVE)
-	@JsonIgnoreProperties({"criador"})
+	@JsonIgnoreProperties({ "criador" })
 	private List<Postagem> minhasPostagens = new ArrayList<>();
 
 	public Long getIdUsuario() {
