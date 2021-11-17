@@ -123,8 +123,8 @@ public class UsuarioServicos {
 				objetoCredenciaisDTO.setNome(resp.getNome());
 				objetoCredenciaisDTO.setEmail(resp.getEmail());
 				objetoCredenciaisDTO.setSenha(resp.getSenha());
-				objetoCredenciaisDTO.setSenha(resp.getTipo());
-				objetoCredenciaisDTO.setSenha(resp.getFoto());
+				objetoCredenciaisDTO.setTipo(resp.getTipo());
+				objetoCredenciaisDTO.setFoto(resp.getFoto());
 
 				return ResponseEntity.status(201).body(objetoCredenciaisDTO); // Usuario Credenciado
 			} else {
